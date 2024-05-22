@@ -3,18 +3,15 @@
     padding: 0;
 }
 
-body {
-    font-family: Pretendard;
+/* a 태그 방문 표시 없애기 위해 작성. 추후 질문 후 수정 예정 */
+a {
+    text-decoration: none;
+    color: black;
 }
 
-header {
-    width: 1920px;
-    height: 902px;
-
-    background-color: #f2e9d8;
-    background-image: url(../img/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom left 1185px;
+/* 전체 폰트 적용 */
+body {
+    font-family: Pretendard;
 }
 
 /* 버튼 공동 디자인 */
@@ -31,6 +28,27 @@ button {
     font-weight: 700;
     line-height: 19px;
     text-align: center;
+}
+
+hr {
+    width: 1278px;
+    height: 1px;
+
+    margin: auto;
+    margin-top: 80px;
+
+    box-sizing: border-box;
+}
+
+/* 헤더 영역 */
+header {
+    width: 1920px;
+    height: 902px;
+
+    background-color: #f2e9d8;
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom left 1185px;
 }
 
 .navigation-bar {
@@ -95,6 +113,11 @@ button {
     margin-left: 320px;
 }
 
+/* 메인 콘텐츠 영역 */
+main {
+    width: 1920px;
+}
+
 .top-section {
     display: flex;
     margin-top: 80px;
@@ -119,10 +142,6 @@ button {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-}
-
-.mid-section {
-    width: 1920px;
 }
 
 .mid-section .top-area h2 {
@@ -183,16 +202,6 @@ button {
     width: 143px;
     margin-top: 28px;
     line-height: 20px;
-}
-
-hr {
-    width: 1278px;
-    height: 1px;
-
-    margin: auto;
-    margin-top: 80px;
-
-    box-sizing: border-box;
 }
 
 .bottom-section>h2 {
@@ -323,6 +332,7 @@ hr {
     content: url('../img/scroll-top-btn-on.svg');
 }
 
+/* 푸터 영역 */
 footer {
     width: 1920px;
     height: 160px;
@@ -357,6 +367,7 @@ footer>nav>ul>li:not(:last-child) {
     margin-right: 20px;
 }
 
+/* 모달창 영역 */
 .modal {
     width: 600px;
     height: 400px;
