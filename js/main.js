@@ -19,6 +19,12 @@ open.addEventListener("click", function () {
     modalPage.classList.add("active");
 });
 
+/* 위 함수를 화살표 함수로
+open.addEventListener("click", () => {
+    modalPage.classList.add("active");
+});
+*/
+
 // 마찬가지로 모달 창을 닫기 위한 클릭 이벤트 등록
 close.onclick = function () {
     // 모달 창 요소의 active 클래스를 제거해서 안 보이게 하기
