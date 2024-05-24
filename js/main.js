@@ -8,7 +8,7 @@ btn.addEventListener('click', () => { fetchImages(pageToPatch += 1) }); // 그�
 
 async function fetchImages(page) {
     try {
-        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=5`); // 계속 다른 사진이 나오게 하려면 page=1의 값을 1이 아닌 2, 3, 4 이렇게 올려줘야 함
+        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=3`); // 계속 다른 사진이 나오게 하려면 page=1의 값을 1이 아닌 2, 3, 4 이렇게 올려줘야 함
 
         if (!response.ok) {
             throw new Error('네트워크 응답에 문제가 있습니다.');

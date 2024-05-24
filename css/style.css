@@ -167,8 +167,15 @@ main {
     font-weight: 700;
 }
 
+/* 대공사 필요 */
+.mid-section>.center-area {
+    width: 1278px;
+    margin: auto;
+}
+
 .mid-section>.center-area>.img-wrap {
-    margin-left: 300px;
+    display: flex;
+    gap: 72px;
 }
 
 .mid-section>.center-area>.img-wrap:first-child {
@@ -179,9 +186,18 @@ main {
     margin-top: 12px;
 }
 
-.mid-section>.center-area>.img-wrap>img:not(:first-child) {
-    margin-left: 12px;
+.mid-section>.center-area>.img-wrap>img {
+    width: 378px;
+    height: 378px;
+    box-shadow: 10px 10px 30px 0px #00000040;
+    border-radius: 30px;
 }
+
+/* .mid-section>.center-area>.img-wrap>img:not(:first-child) {
+    margin-left: 12px;
+} */
+
+/* 여기까지 */
 
 .mid-section .bottom-area {
     margin-top: 55px;
@@ -422,7 +438,7 @@ footer>nav>ul>li:not(:last-child) {
 
 .close-modal {
     width: 183px;
-    
+
     margin-top: 38px;
 
     font-size: 16px;
