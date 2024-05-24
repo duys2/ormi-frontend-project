@@ -65,15 +65,14 @@
         <article class="bottom-section">
             <h2>Where you’ll be</h2>
             <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-            <!-- 구글맵 가져오기. 추후에 카카오맵 api로 수정 -->
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2671261224914!2d126.5714548!3d33.4423464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cfdb22ad3cce3%3A0x1321aebb880d1b1!2z7KCc7KO87Yq567OE7J6Q7LmY64-EIOygnOyjvOyLnCDssqjri6jroZwgMzMw!5e0!3m2!1sko!2skr!4v1716188688964!5m2!1sko!2skr" width="1278" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="subscribe-area"><!-- 디자인 용 div -->
+            <div id="map"></div><!-- 지도를 표시할 div -->
+            <article class="subscribe-area">
                 <article class="subscribe-box">
                     <div class="text-area"><!-- 디자인 용 div -->
                         <h2>Subscribe to our Blog post</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text</p>
                     </div>
-                    <div class="input-area">
+                    <div class="input-area"><!-- 디자인 용 div -->
                         <form action="" method="get">
                             <img src="./img/mail.svg" alt="mail icon">
                             <input type="email" placeholder="Enter your e-mail address">
@@ -83,7 +82,7 @@
                     </div>
                 </article>
                 <img src="./img/main-bottom.png" alt="bottom img" class="bottom-img">
-            </div>
+            </article>
         </article>
         <a href="#"><button class="scroll-top-btn"><img src="./img/scroll-top-btn-off.svg" alt=""></button></a>
     </main>
@@ -109,6 +108,8 @@
             <button class="close-modal">OK! I Love HODU</button>
         </div>
     </article>
+    <!-- 카카오맵 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=85e308e25f687bf5829296fdf0beba60"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -229,12 +229,14 @@ main {
 .bottom-section #map {
     margin-top: 48px;
     margin-left: 320px;
+
+    width: 1278px;
+    height: 520px;
 }
 
 .bottom-section>.subscribe-area {
     position: relative;
 }
-
 
 .bottom-section>.subscribe-area>.subscribe-box {
     width: 1280px;
