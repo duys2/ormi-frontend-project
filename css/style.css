@@ -170,28 +170,23 @@ main {
 .mid-section>.center-area {
     width: 1278px;
     margin: auto;
-}
 
-.mid-section>.center-area>.img-wrap {
-    margin-top: 72px;
     display: flex;
+    flex-wrap: wrap;
     gap: 72px;
-}
-
-.mid-section>.center-area>.img-wrap:first-child {
     margin-top: 88px;
 }
 
-.mid-section>.center-area>.img-wrap>img {
+.mid-section>.center-area>img {
     width: 378px;
     height: 378px;
+
     box-shadow: 10px 10px 30px 0px #00000040;
     border-radius: 30px;
 }
 
 .mid-section .bottom-area {
     margin-top: 100px;
-
     display: flex;
     flex-direction: column;
     align-items: center;

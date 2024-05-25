@@ -1,14 +1,15 @@
 /* ---------------- 추가 이미지 랜더링 영역 ---------------- */
 
-const listPic = document.querySelector('.list-pic');
-const btn = document.querySelector('.more-btn');
-let pageToPatch = 1;
+const imgList = document.querySelector('.center-area');
+const moreBtn = document.querySelector('.more-btn');
 
-btn.addEventListener('click', () => { fetchImages(pageToPatch += 1) }); // 그래서 이 익명 함수가 실행되고 그 뒤에 fetchImages()가 실행됨
+let pageToPatch = 3;
+
+moreBtn.addEventListener('click', () => { fetchImages(pageToPatch += 1) }); // 그래서 이 익명 함수가 실행되고 그 뒤에 fetchImages()가 실행됨
 
 async function fetchImages(page) {
     try {
-        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=3`); // 계속 다른 사진이 나오게 하려면 page=1의 값을 1이 아닌 2, 3, 4 이렇게 올려줘야 함
+        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=12`); // 계속 다른 사진이 나오게 하려면 page=1의 값을 1이 아닌 2, 3, 4 이렇게 올려줘야 함
 
         if (!response.ok) {
             throw new Error('네트워크 응답에 문제가 있습니다.');
@@ -24,8 +25,9 @@ async function fetchImages(page) {
 }
 
 function makeImageList(datas) {
+
     datas.forEach((data) => {
-        listPic.insertAdjacentHTML('beforeend', `<li class="img-width"><img src="${data.download_url}" alt=""></li>`); // innerHTML() 보다는 이게 더 성능이 좋음
+        imgList.insertAdjacentHTML('beforeend', `<img src="${data.download_url}" alt="center area img">`); // innerHTML() 보다는 이게 더 성능이 좋음
     });
 }
 
