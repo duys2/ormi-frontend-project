@@ -236,6 +236,8 @@ main {
 }
 
 .bottom-section>.subscribe-area {
+    width: 1920px;
+    height: 521px;
     position: relative;
 }
 
@@ -315,7 +317,7 @@ main {
 
 .bottom-section>.subscribe-area>.bottom-img {
     position: absolute;
-    top: 181px;
+    bottom: 0;
 }
 
 .scroll-top-btn {
@@ -348,8 +350,6 @@ main {
 footer {
     width: 1920px;
     height: 160px;
-
-    margin-top: 521px;
 
     display: flex;
     justify-content: space-between;
