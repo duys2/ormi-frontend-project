@@ -65,19 +65,19 @@ header {
 }
 
 /* 네비게이션 바 */
-.header-bar>#gnb {
+.header-bar>.menu-wrap {
     display: flex;
     margin-right: 320px;
 }
 
-.header-bar>#gnb>ul {
+.header-bar>.menu-wrap>nav>ul {
     display: flex;
     margin-top: 41px;
     margin-right: 49px;
     gap: 30px;
 }
 
-.header-bar>#gnb>ul>li {
+.header-bar>.menu-wrap>nav>ul>li {
     float: left;
     list-style: none;
 
@@ -87,7 +87,7 @@ header {
 }
 
 /* 다운 버튼 */
-.header-bar>#gnb .download-btn {
+.header-bar>.menu-wrap .download-btn {
     margin-top: 26px;
 }
 
