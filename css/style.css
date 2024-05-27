@@ -403,9 +403,9 @@ footer>nav>ul>li:not(:last-child) {
     width: 600px;
     height: 400px;
 
-    position: absolute;
-    top: 3570px;
-    left: 630px;
+    position: fixed;
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
     z-index: 10;
 
     background-image: url(../img/modal_bg.png);
