@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/* a 태그 방문 표시 없애기 위해 작성. 추후 질문 후 수정 예정 */
+/* a 태그 방문 표시 없애기 */
 a {
     text-decoration: none;
     color: black;
@@ -113,7 +113,7 @@ header {
     margin-left: 320px;
 }
 
-/* 메인 콘텐츠 영역 */
+/* 메인 영역 */
 main {
     width: 1920px;
 }
@@ -235,8 +235,8 @@ main {
     height: 520px;
 }
 
+/* 구독 콘텐츠 영역 */
 .bottom-section>.subscribe-area {
-    width: 1920px;
     height: 521px;
     position: relative;
 }
