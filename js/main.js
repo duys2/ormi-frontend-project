@@ -1,3 +1,31 @@
+/* ---------------- 다운로드 버튼 영역 ---------------- */
+const downloadBtns = document.querySelectorAll('.download-btn'); // 배열로 넘어옴
+
+// 각 버튼에 이벤트 리스너를 추가하여 버튼을 누르면 이미지를 다운로드
+downloadBtns.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        let imageUrl, imageName;
+
+        // 각 버튼에 해당하는 이미지 URL, 이름 설정
+        if (index == 0) {
+            imageUrl = "../img/logo.png";
+            imageName = "logo.png"
+        }
+        else {
+            imageUrl = "../img/intro_bg.png";
+            imageName = "intro_bg.png"
+        }
+
+        // 다운을 위해 a 태그 삽입 후 삭제
+        const link = document.createElement('a');
+        link.href = imageUrl;
+        link.download = imageName; // 다운로드될 파일 이름 설정
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+});
+
 /* ---------------- 추가 이미지 랜더링 영역 ---------------- */
 
 const imgList = document.querySelector('.img-wrap');
@@ -45,11 +73,11 @@ const map = new kakao.maps.Map(mapContainer, mapOption);
 /* ---------------- 모달 랜더링 영역 ---------------- */
 
 // 모달 창을 열기 위한 요소 할당
-let open = document.querySelector(".modal-open");
+const open = document.querySelector(".modal-open");
 // 모달 창에 해당하는 요소 할당
-let modal = document.querySelector(".modal");
+const modal = document.querySelector(".modal");
 // 모달 창을 닫기 위한 요소 할당
-let close = document.querySelector(".close-modal");
+const close = document.querySelector(".close-modal");
 
 /*
 open.onclick = function () { 

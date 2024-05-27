@@ -49,9 +49,6 @@ header {
     width: 1920px;
 
     background-color: #f2e9d8;
-    /* background-image: url(../img/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom left 1185px; */
 }
 
 /* 헤더 네비게이션 바 영역 */
@@ -106,7 +103,7 @@ main {
     padding-left: 320px;
 
     background-color: #f2e9d8;
-    background-image: url(../img/header_bg.png);
+    background-image: url(../img/intro_bg.png);
     background-repeat: no-repeat;
     background-position: bottom left 1185px;
 }
