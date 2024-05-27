@@ -325,6 +325,7 @@ main {
     height: 50px;
 
     border: 1px solid #C4C4C4;
+    border-radius: 100%;
     background-color: #FFFFFFCC;
 
     position: absolute;
