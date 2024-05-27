@@ -54,7 +54,7 @@ header {
 /* 헤더 바 */
 .header-bar {
     height: 102px;
-    
+
     display: flex;
     justify-content: space-between;
 }
@@ -403,7 +403,9 @@ footer>nav>ul>li:not(:last-child) {
     width: 600px;
     height: 400px;
 
+    /* 모달창 화면 중앙에 배치 */
     position: fixed;
+    /* calc()을 쓸 때 +, -는 좌우 공백 필요. 일관성을 위해 * / 도 공백 추가하는 게 좋다 */
     top: calc(50% - 200px);
     left: calc(50% - 300px);
     z-index: 10;
