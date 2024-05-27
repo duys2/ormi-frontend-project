@@ -1,3 +1,4 @@
+/* 마진 패딩 초기화 */
 * {
     margin: 0;
     padding: 0;
@@ -30,12 +31,15 @@ button {
     text-align: center;
 }
 
+/* hr 디자인 */
 hr {
     width: 1278px;
     height: 1px;
 
     margin: auto;
     margin-top: 80px;
+
+    color: #C4C4C4;
 
     box-sizing: border-box;
 }
@@ -51,6 +55,7 @@ header {
     background-position: bottom left 1185px;
 }
 
+/* 헤더 네비게이션 바 영역 */
 .navigation-bar {
     height: 102px;
 }
