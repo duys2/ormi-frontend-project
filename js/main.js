@@ -1,6 +1,6 @@
 /* ---------------- 추가 이미지 랜더링 영역 ---------------- */
 
-const imgList = document.querySelector('.center-area');
+const imgList = document.querySelector('.img-wrap');
 const moreBtn = document.querySelector('.more-btn');
 
 let pageToPatch = 3;
@@ -27,7 +27,7 @@ async function fetchImages(page) {
 function makeImageList(datas) {
 
     datas.forEach((data) => {
-        imgList.insertAdjacentHTML('beforeend', `<img src="${data.download_url}" alt="center area img">`); // innerHTML() 보다는 이게 더 성능이 좋음
+        imgList.insertAdjacentHTML('beforeend', `<img src="${data.download_url}" alt="mid area img">`); // innerHTML() 보다는 이게 더 성능이 좋음
     });
 }
 

@@ -9,52 +9,51 @@
 <body>
     <!-- 헤더 영역 -->
     <header>
-        <!-- 헤더 네비게이션 바 -->
-        <nav class="navigation-bar">
+        <!-- 헤더 바 -->
+        <div class="header-bar">
             <!-- 헤더 로고 -->
             <a href="#"><img src="./img/logo.png" alt="logo"></a>
             <!-- 헤더바 메뉴 영역 -->
-            <div class="menu-wrap"><!-- 디자인 용 div -->
+            <nav id="gnb"><!-- 디자인 용 div -->
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Support</a></li>
                 </ul>
                 <button class="download-btn">Download</button>
-            </div>
-        </nav>
-        <!-- 헤더 본문 -->
-        <article class="header-main">
+            </nav>
+        </div>
+    </header>
+    <!-- 메인 영역 -->
+    <main>
+        <article class="intro-area">
             <h2>Lorem Ipsum is simply<br>dummy text of the printing and</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text<br> ever since the 1500s, when an unknown</p>
             <button class="download-btn">Download</button>
         </article>
-    </header>
-    <!-- 메인 영역 -->
-    <main>
-        <article class="top-section">
+        <article class="top-area">
             <img src="./img/main_top.png" alt="lying down cat">
             <div class="text-wrap"><!-- 디자인 용 div -->
                 <h2>Lorem Ipsum is simply<br> dummy text of the printing<br>and dummy text</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.</p>
             </div>
         </article>
-        <article class="mid-section">
+        <article class="mid-area">
             <h2>dummy text of the printing and dummy</h2>
             <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-            <div class="img-area">
-                <img src="./img/show_img1.png" alt="center area img">
-                <img src="./img/show_img2.png" alt="center area img">
-                <img src="./img/show_img3.png" alt="center area img">
-                <img src="./img/show_img4.png" alt="center area img">
-                <img src="./img/show_img5.png" alt="center area img">
-                <img src="./img/show_img6.png" alt="center area img">
+            <div class="img-wrap">
+                <img src="./img/show_img1.png" alt="mid area img">
+                <img src="./img/show_img2.png" alt="mid area img">
+                <img src="./img/show_img3.png" alt="mid area img">
+                <img src="./img/show_img4.png" alt="mid area img">
+                <img src="./img/show_img5.png" alt="mid area img">
+                <img src="./img/show_img6.png" alt="mid area img">
             </div>
             <h2>Continue exploring HODU</h2>
             <button class="more-btn">Show more</button>
             <hr>
         </article>
-        <article class="bottom-section">
+        <article class="bottom-area">
             <h2>Where you’ll be</h2>
             <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
             <div id="map"></div><!-- 지도를 표시할 div -->
