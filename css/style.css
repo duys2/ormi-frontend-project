@@ -31,6 +31,7 @@ button {
     text-align: center;
 
     /* 피드백: 버튼에 올리면 커서 포인트 효과 넣어주면 좋다 */
+    cursor: pointer;
 }
 
 /* hr 디자인 */
