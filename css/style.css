@@ -29,6 +29,8 @@ button {
     font-weight: 700;
     line-height: 19px;
     text-align: center;
+
+    /* 피드백: 버튼에 올리면 커서 포인트 효과 넣어주면 좋다 */
 }
 
 /* hr 디자인 */
@@ -100,6 +102,7 @@ main {
     background-color: #f2e9d8;
     background-image: url(../img/intro_bg.png);
     background-repeat: no-repeat;
+    /* 피드백: left보다 right로 수치 주는 게 낫다 */
     background-position: bottom left 1185px;
 }
 
@@ -184,6 +187,7 @@ main {
     width: 1278px;
     margin: auto;
 
+    /* 피드백: html에서 ul li로 해보자 */
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
