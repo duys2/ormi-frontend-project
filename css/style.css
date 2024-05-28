@@ -47,37 +47,32 @@ hr {
 /* 헤더 영역 */
 header {
     width: 1920px;
-
-    background-color: #f2e9d8;
-}
-
-/* 헤더 바 */
-.header-bar {
     height: 102px;
-
+    
+    background-color: #f2e9d8;
     display: flex;
     justify-content: space-between;
 }
 
-.header-bar>a {
+header>a {
     margin-top: 31px;
     margin-left: 320px;
 }
 
 /* 네비게이션 바 */
-.header-bar>.menu-wrap {
+header>.menu-wrap {
     display: flex;
     margin-right: 320px;
 }
 
-.header-bar>.menu-wrap>nav>ul {
+header>.menu-wrap>nav>ul {
     display: flex;
     margin-top: 41px;
     margin-right: 49px;
     gap: 30px;
 }
 
-.header-bar>.menu-wrap>nav>ul>li {
+header>.menu-wrap>nav>ul>li {
     float: left;
     list-style: none;
 
@@ -87,7 +82,7 @@ header {
 }
 
 /* 다운 버튼 */
-.header-bar>.menu-wrap .download-btn {
+header>.menu-wrap .download-btn {
     margin-top: 26px;
 }
 
