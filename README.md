@@ -5,16 +5,16 @@
 
 구현 대상: https://www.figma.com/design/s9RCnA6dSi3QHHeMDFHKE6/EST-오르미(BE)_HTML%2FCSS%2FJS?node-id=104924-12&t=WGGFP3p4YRNqrTSh-0
 
-기간동안 JS 나머지 강의: 5/20 (DOM api), 5/22 (Ajax). 필요시 추가 강의 진행.
+기간 동안 JS 나머지 강의: 5/20 (DOM api), 5/22 (Ajax). 필요시 추가 강의 진행.
 
 ## 구현 내용
-1. HTML, CSS 를 이용한 레이아웃 구현
+1. HTML, CSS를 이용한 레이아웃 구현
 
-2. JS 기능과 관련있는 부분
+2. JS 기능과 관련 있는 부분
    
     ① Show more 버튼을 클릭했을 때의 추가적인 이미지 렌더링
 
-    ② 지도 구현 부분 (kakao map api 사용 예정)
+    ② 지도 구현 부분 (kakao map api 사용)
 
     ③ Subscribe 버튼 클릭 시 고양이 모달 렌더링
 
